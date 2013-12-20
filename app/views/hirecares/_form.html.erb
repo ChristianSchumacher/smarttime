@@ -1,0 +1,57 @@
+<%= form_for(@hirecare) do |f| %>
+  <% if @hirecare.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hirecare.errors.count, "error") %> prohibited this hirecare from being saved:</h2>
+
+      <ul>
+      <% @hirecare.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :badge %><br>
+    <%= f.text_field :badge %>
+  </div>
+  <div class="field">
+    <%= f.label :regestration_date %><br>
+    <%= f.date_select :regestration_date %>
+  </div>
+  <div class="field">
+    <%= f.label :fuel %><br>
+    <%= f.text_field :fuel %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :smoking %><br>
+    <%= f.check_box :smoking %>
+  </div>
+  <div class="field">
+    <%= f.label :defects %><br>
+    <%= f.text_area :defects %>
+  </div>
+  <div class="field">
+    <%= f.label :status_id %><br>
+    <%= f.number_field :status_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tech_check %><br>
+    <%= f.date_select :tech_check %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

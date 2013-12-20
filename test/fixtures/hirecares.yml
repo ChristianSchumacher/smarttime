@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  badge: MyString
+  regestration_date: 2013-12-20
+  fuel: MyString
+  brand: MyString
+  model: MyString
+  smoking: false
+  defects: MyText
+  status_id: 1
+  tech_check: 2013-12-20
+  comment: MyText
+
+two:
+  badge: MyString
+  regestration_date: 2013-12-20
+  fuel: MyString
+  brand: MyString
+  model: MyString
+  smoking: false
+  defects: MyText
+  status_id: 1
+  tech_check: 2013-12-20
+  comment: MyText

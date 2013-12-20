@@ -1,0 +1,2 @@
+module HirecaresHelper
+end
