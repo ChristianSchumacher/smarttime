@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Appointment date:</strong>
+  <%= @function.appointment_date %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @function.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @function.end_time %>
+</p>
+
+<p>
+  <strong>Allocated at:</strong>
+  <%= @function.allocated_at %>
+</p>
+
+<p>
+  <strong>Work:</strong>
+  <%= @function.work_id %>
+</p>
+
+<p>
+  <strong>Work time:</strong>
+  <%= @function.work_time %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @function.customer_id %>
+</p>
+
+<p>
+  <strong>Hire car:</strong>
+  <%= @function.hire_car_id %>
+</p>
+
+<p>
+  <strong>Direct contact:</strong>
+  <%= @function.direct_contact %>
+</p>
+
+<p>
+  <strong>Customer service agreement:</strong>
+  <%= @function.customer_service_agreement %>
+</p>
+
+<p>
+  <strong>Data privacy statement:</strong>
+  <%= @function.data_privacy_statement %>
+</p>
+
+<%= link_to 'Edit', edit_function_path(@function) %> |
+<%= link_to 'Back', functions_path %>

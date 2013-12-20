@@ -1,0 +1,47 @@
+<h1>Listing functions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Appointment date</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>Allocated at</th>
+      <th>Work</th>
+      <th>Work time</th>
+      <th>Customer</th>
+      <th>Hire car</th>
+      <th>Direct contact</th>
+      <th>Customer service agreement</th>
+      <th>Data privacy statement</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @functions.each do |function| %>
+      <tr>
+        <td><%= function.appointment_date %></td>
+        <td><%= function.start_time %></td>
+        <td><%= function.end_time %></td>
+        <td><%= function.allocated_at %></td>
+        <td><%= function.work_id %></td>
+        <td><%= function.work_time %></td>
+        <td><%= function.customer_id %></td>
+        <td><%= function.hire_car_id %></td>
+        <td><%= function.direct_contact %></td>
+        <td><%= function.customer_service_agreement %></td>
+        <td><%= function.data_privacy_statement %></td>
+        <td><%= link_to 'Show', function %></td>
+        <td><%= link_to 'Edit', edit_function_path(function) %></td>
+        <td><%= link_to 'Destroy', function, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Function', new_function_path %>
