@@ -12,46 +12,47 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :badge %><br>
+    <%= f.label :badge , 'Kennzeichen' %><br>
     <%= f.text_field :badge %>
   </div>
   <div class="field">
-    <%= f.label :regestration_date %><br>
+    <%= f.label :regestration_date, 'Erstzulassung' %><br>
     <%= f.date_select :regestration_date %>
   </div>
   <div class="field">
-    <%= f.label :fuel %><br>
-    <%= f.text_field :fuel %>
+    <%= f.label :fuel, 'Kraftstoff' %><br>
+	<%= f.select :fuel, [['Diesel', 'Diesel'], ['Benzin', 'Benzin']]%>
   </div>
   <div class="field">
-    <%= f.label :brand %><br>
-    <%= f.text_field :brand %>
+    <%= f.label :brand, 'Marke' %><br>
+    <%= f.text_field :brand, :value => 'Smart' %>
   </div>
   <div class="field">
     <%= f.label :model %><br>
     <%= f.text_field :model %>
   </div>
   <div class="field">
-    <%= f.label :smoking %><br>
+    <%= f.label :smoking, 'Raucher-Kfz?' %><br>
     <%= f.check_box :smoking %>
   </div>
   <div class="field">
-    <%= f.label :defects %><br>
+    <%= f.label :defects, 'tech. Mängel' %><br>
     <%= f.text_area :defects %>
   </div>
   <div class="field">
     <%= f.label :status_id %><br>
+	
     <%= f.number_field :status_id %>
   </div>
   <div class="field">
-    <%= f.label :tech_check %><br>
+    <%= f.label :tech_check, 'TÜV-Datum' %><br>
     <%= f.date_select :tech_check %>
   </div>
   <div class="field">
-    <%= f.label :comment %><br>
+    <%= f.label :comment, 'Bemerkung' %><br>
     <%= f.text_area :comment %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'absenden' %>
   </div>
 <% end %>
